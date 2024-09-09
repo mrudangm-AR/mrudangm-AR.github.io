@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SOFT TISSUE BIOMECHANICS LAB AR PORTAL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+          <title>Model Viewer</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    model-viewer{
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+    }
+  </style>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<h1>SHELL ELEMENTS</h1>
+						</header>
+                        <p>STATIC MODEL: REFERENCE CONFIGURATION</p>
+                          <model-viewer src="assets/ARP/Shell/Shell_Ref.glb" ios-src="assets/ARP/Shell/Shell_Ref.usdz" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls>
+                          </model-viewer>
+                        
+                        <p>STATIC MODEL: DEFORMED CONFIGURATION</p>
+                          <model-viewer src="assets/ARP/Shell/Shell_Def.glb" ios-src="assets/ARP/Shell/Shell_Def.usdz" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls>
+                          </model-viewer> 
+                        
+                        <p>DYNAMIC MODEL</p>
+                          <model-viewer src="assets/ARP/Shell/Shell_Dynamic.glb" ios-src="assets/ARP/Shell/Shell_Dynamic.usdz" autoplay ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls>
+                          </model-viewer>                               
+						<footer>
+							<ul class="icons">
+
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Mrudang Mathur</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
+</html>
